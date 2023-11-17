@@ -1,17 +1,3 @@
-.desaturateUserColors-1O-G89 {
-    font-weight: bold;
-}
-
-.codeBlockText__6172e,
-code {
-    font-family: var(--code-font);
-}
-
-::placeholder,
-body,
-button,
-input,
-select,
-textarea {
-    font-family: var(--font);
+body {
+    background: red;
 }
