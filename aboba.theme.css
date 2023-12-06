@@ -1,4 +1,215 @@
-*{
-    color: red;
-    font-family: 'Courier New', Courier, monospace;
+/**
+ * @name Aboba
+ * @version 0.0.2
+ * @author dimabreus, Bduidan
+ * @authorId 840559505308909599, 1107673955273285693
+ * @description The Aboba Theme
+ * @donate https://www.donationalerts.com/r/portal_dungeon
+ * @source https://github.com/dimabreus/aboba_theme/releases
+*/
+
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,500;0,700;1,500;1,700&family=Roboto:ital,wght@0,500;0,900;1,500;1,900&display=swap');
+
+/* Source */
+
+.desaturateUserColors-1O-G89 {
+    font-weight: bold;
+}
+
+.codeBlockText__6172e,
+code {
+    font-family: var(--code-font);
+}
+
+::placeholder,
+body,
+button,
+input,
+select,
+textarea {
+    font-family: var(--font);
+}
+
+.spoilerContent__37bfa {
+    background: var(--spoiler-background)
+}
+
+.spoilerContent__37bfa:hover {
+    background: var(--spoiler-background-hover)
+}
+
+.autocompleteInner_a0e6a1 {
+    background: var(--background-primary);
+}
+
+/* Animations */
+
+button:active {
+    transform: scale(0.95);
+}
+
+button .contents_fb6220 {
+    z-index: 2;
+}
+
+button:not(.lookLink__93965):hover>.contents_fb6220 {
+    color: #fff;
+}
+
+button>.contents_fb6220>.defaultColor__77578 {
+    color: #fff !important;
+}
+
+
+button:hover:after {
+    width: 100%;
+}
+
+.colorBrand_b2253e:has(+ .colorPrimary__6ed40) {
+    margin-left: 5px;
+}
+
+.colorRed_d6b062:has(+ .colorPrimary__6ed40) {
+    margin-left: 5px;
+}
+
+.lookLink__93965.button_afdfd9:not(.colorLink_b651e5, .removeButton__731bd) {
+    z-index: 1;
+    box-shadow: 0px 0px 1px 2px var(--btn_dark_blue);
+}
+
+.removeButton__731bd {
+    box-shadow: 0px 0px 1px 2px var(--btn_light_red);
+}
+
+.button_afdfd9:after {
+    border-radius: 3px;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: 1;
+    transition: all .35s;
+}
+
+.lookOutlined__46d54:after,
+.deleteApp__18070:after,
+.removeButton__731bd:after {
+    background: var(--btn_light_red) !important;
+}
+
+.fieldButton_a93f59:not(.removeButton__731bd):after,
+.secondaryButton__68e05:not(.removeButton__731bd):after,
+.shinyButton_fc8363.sizeMedium_c6fa98:not(.removeButton__731bd):after,
+.lookFilled__19298.sizeMedium_c6fa98:not(.removeButton__731bd):after,
+.button__890f5.lookFilled__19298.buttonColor__6f6b0.sizeSmall__71a98:after,
+.button_afdfd9.component__43381.colorPrimary__6ed40:after {
+    background: var(--btn_dark_gray) !important;
+}
+
+.disableButton__61514.colorRed_d6b062.sizeSmall__71a98:after,
+.lookFilled__19298.colorRed_d6b062.sizeMedium_c6fa98:after,
+.button_afdfd9.component__43381.colorRed_d6b062:after {
+    background: var(--btn_dark_red) !important;
+}
+
+.shinyButton_fc8363:after,
+.colorGreen__5f181:after,
+.shinyButton_fc8363.colorGreen__5f181.sizeMedium_c6fa98:after {
+    background: var(--btn_dark_green) !important;
+}
+
+.colorBrandNew_fd170a.sizeMedium_c6fa98:not(.removeButton__731bd):after,
+.colorBrand_b2253e.sizeMedium_c6fa98:not(.removeButton__731bd):after,
+.lookLink__93965.button_afdfd9:not(.colorLink_b651e5, .removeButton__731bd):after,
+.button_afdfd9.lookFilled__19298.colorBrand_b2253e:after {
+    background: var(--btn_dark_blue) !important;
+}
+
+.lookOutlined__46d54.colorBrand_b2253e.sizeMedium_c6fa98:after {
+    background: var(--btn_light_blue) !important;
+}
+
+.button__4f306:after,
+.lookLink__93965.lowSaturationUnderline__95e71.colorLink_b651e5:after {
+    background: transparent;
+}
+
+
+
+/* ОСОБЕННОЕ */
+.item__48dda.themed_b957e8{
+    box-shadow: inset 0 0 0 0 var(--link_animation);
+    color: var(--link_animation);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.item__48dda.themed_b957e8:hover{
+    box-shadow: inset 100vh 0 0 0 var(--link_animation);
+    color: white;
+}
+
+:root{
+    --btn_light_blue: #5865f2;
+    --btn_dark_blue: #3b35d8;
+    --btn_light_red: #da373c;
+    --btn_dark_red: #70090b;
+    --btn_dark_green: #0c4922;
+    --btn_dark_gray: #313135;
+
+
+    --link_animation: #54b3d6;
+}
+
+
+
+
+
+
+.theme-dark {
+    --text-normal: #33689d;
+    --text-muted: #4a4a52;
+    --text-link: #6e6af6;
+    --text-positive: #50dc7d;
+    --text-warning: #8d4949;
+    --text-danger: #8d4949;
+    --text-brand: #6e6af6;
+    --spoiler-background: #18191b;
+    --spoiler-background-hover: #1b1c1f;
+    --interactive-normal: #b9bbbe;
+    --interactive-hover: #dcddde;
+    --interactive-active: #c9ced0;
+    --interactive-muted: #4f545c;
+    --background-primary: #212121;
+    --background-secondary: #171717;
+    --background-secondary-alt: #17161b;
+    --background-tertiary: #151515;
+    --background-accent: #4f545c;
+    --background-floating: #17161b;
+    --button-outline-danger-background-hover: transparent;
+    --button-outline-brand-background-hover: transparent;
+    --modal-background: #101014;
+    --channeltextarea-background: #2e2e2e;
+    --info-positive-text: #fff;
+    --info-warning-text: #fff;
+    --info-warning-foreground: #6e6af6;
+    --info-danger-text: #fff;
+    --info-help-text: #fff;
+    --status-warning-text: #000;
+    --background-mentioned: #6f6af62c;
+    --background-mentioned-hover: #6f6af615;
+    --background-message-hover: rgba(4, 4, 5, 0.07);
+    --scrollbar-auto-thumb: #6e6af6;
+    --brand-experiment: #6e6af6;
+    --brand-experiment-hover: #6f6af64d;
+    --brand-experiment-560: #6e6af6;
+    --channels-default: #4a4a52;
+    --selected-indicator: #97ffa5;
+    --hover-indicator: #ffffff;
+    --font: 'Roboto', sans-serif;
+    --code-font: 'Roboto Mono', monospace;
 }
